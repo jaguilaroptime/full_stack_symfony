@@ -5,9 +5,10 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ORM\Table(name="videos")
  * @ORM\Entity(repositoryClass="App\Repository\VideosRepository")
  */
-class Videos
+class Video
 {
     /**
      * @ORM\Id()
@@ -17,7 +18,7 @@ class Videos
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Users")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
@@ -146,12 +147,12 @@ class Videos
         return $this;
     }
 
-    public function getUser(): ?Users
+    public function getUser(): ?User
     {
         return $this->user;
     }
 
-    public function setUser(?Users $user): self
+    public function setUser(?User $user): self
     {
         $this->user = $user;
 

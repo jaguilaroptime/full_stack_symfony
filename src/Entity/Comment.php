@@ -5,9 +5,10 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ * @ORM\Table(name="comments")
  * @ORM\Entity(repositoryClass="App\Repository\CommentsRepository")
  */
-class Comments
+class Comment
 {
     /**
      * @ORM\Id()
@@ -17,13 +18,13 @@ class Comments
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Users")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Videos")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Video")
      * @ORM\JoinColumn(name="video_id", referencedColumnName="id")
      */
     private $video;
@@ -67,24 +68,24 @@ class Comments
         return $this;
     }
 
-    public function getUser(): ?Users
+    public function getUser(): ?User
     {
         return $this->user;
     }
 
-    public function setUser(?Users $user): self
+    public function setUser(?User $user): self
     {
         $this->user = $user;
 
         return $this;
     }
 
-    public function getVideo(): ?Videos
+    public function getVideo(): ?Video
     {
         return $this->video;
     }
 
-    public function setVideo(?Videos $video): self
+    public function setVideo(?Video $video): self
     {
         $this->video = $video;
 
