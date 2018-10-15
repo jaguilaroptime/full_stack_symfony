@@ -1,4 +1,10 @@
 {
+    "beberlei/assert": {
+        "version": "v2.9.6"
+    },
+    "clue/stream-filter": {
+        "version": "v1.4.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -80,20 +86,56 @@
     "facebook/webdriver": {
         "version": "1.6.0"
     },
+    "fgrosse/phpasn1": {
+        "version": "2.0.1"
+    },
     "fig/link-util": {
         "version": "1.0.0"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.4.2"
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "mdanter/ecc": {
+        "version": "v0.5.0"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
+    },
+    "nesbot/carbon": {
+        "version": "1.34.0"
     },
     "nikic/php-parser": {
         "version": "v4.1.0"
     },
     "ocramius/proxy-manager": {
         "version": "2.1.1"
+    },
+    "okta/jwt-verifier": {
+        "version": "0.2.1"
+    },
+    "php-http/client-common": {
+        "version": "1.8.1"
+    },
+    "php-http/curl-client": {
+        "version": "v1.7.1"
+    },
+    "php-http/discovery": {
+        "version": "1.4.0"
+    },
+    "php-http/httplug": {
+        "version": "v1.1.0"
+    },
+    "php-http/message": {
+        "version": "1.7.0"
+    },
+    "php-http/message-factory": {
+        "version": "v1.0.2"
+    },
+    "php-http/promise": {
+        "version": "v1.0.0"
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -109,6 +151,9 @@
     },
     "psr/container": {
         "version": "1.0.0"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
     },
     "psr/link": {
         "version": "1.0.0"
@@ -127,6 +172,18 @@
             "version": "5.2",
             "ref": "fb7e19da7f013d0d422fa9bce16f5c510e27609b"
         }
+    },
+    "spomky-labs/aes-key-wrap": {
+        "version": "v4.0.1"
+    },
+    "spomky-labs/base64url": {
+        "version": "v1.0.2"
+    },
+    "spomky-labs/jose": {
+        "version": "v7.1.0"
+    },
+    "spomky-labs/php-aes-gcm": {
+        "version": "v1.2.0"
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.1.3"
